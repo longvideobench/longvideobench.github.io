@@ -202,9 +202,147 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-max-desktop">
         <h2 class="hero title is-3">Leaderboard</h2>
-        <div class="container is-max-desktop" id="gradio">
-          <gradio-app src="https://longvideobench-longvideobench.hf.space"></gradio-app>
-        </div>
+        <!DOCTYPE html>
+
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>Model</th>
+                <th>Test Total</th>
+                <th>8s-15s</th>
+                <th>15s-60s</th>
+                <th>180s-600s</th>
+                <th>900s-3600s</th>
+                <th>S2E</th>
+                <th>S2O</th>
+                <th>S2A</th>
+                <th>E2O</th>
+                <th>SSS</th>
+                <th>SOS</th>
+                <th>SAA</th>
+                <th>T3E</th>
+                <th>T3O</th>
+                <th>TOS</th>
+                <th>TAA</th>
+                <th>Val Total</th>
+                <th>LMM Type</th>
+                <th>Interleaved?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GPT-4o (0513)</td>
+                <td>66.7</td>
+                <td>71.6</td>
+                <td>76.8</td>
+                <td>66.7</td>
+                <td>61.6</td>
+                <td>76.8</td>
+                <td>69.8</td>
+                <td>70.9</td>
+                <td>67.3</td>
+                <td>44.3</td>
+                <td>75.6</td>
+                <td>62.6</td>
+                <td>64.0</td>
+                <td>66.4</td>
+                <td>62.1</td>
+                <td>66.4</td>
+                <td>66.7</td>
+                <td>Proprietary long-context</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Gemini-1.5-Pro (0514)</td>
+                <td>64.4</td>
+                <td>70.2</td>
+                <td>75.3</td>
+                <td>65.0</td>
+                <td>59.1</td>
+                <td>74.6</td>
+                <td>58.3</td>
+                <td>76.2</td>
+                <td>68.7</td>
+                <td>55.2</td>
+                <td>69.0</td>
+                <td>59.0</td>
+                <td>58.9</td>
+                <td>60.5</td>
+                <td>53.3</td>
+                <td>62.5</td>
+                <td>64.0</td>
+                <td>Proprietary long-context</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Gemini-1.5-Flash (0514)</td>
+                <td>62.4</td>
+                <td>66.1</td>
+                <td>73.1</td>
+                <td>63.1</td>
+                <td>57.3</td>
+                <td>68.5</td>
+                <td>64.7</td>
+                <td>68.0</td>
+                <td>64.5</td>
+                <td>43.1</td>
+                <td>67.3</td>
+                <td>56.2</td>
+                <td>57.5</td>
+                <td>55.0</td>
+                <td>55.3</td>
+                <td>60.7</td>
+                <td>61.6</td>
+                <td>Proprietary long-context</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>GPT-4-Turbo (0409)</td>
+                <td>60.7</td>
+                <td>66.4</td>
+                <td>71.1</td>
+                <td>61.7</td>
+                <td>54.5</td>
+                <td>74.9</td>
+                <td>60.1</td>
+                <td>64.2</td>
+                <td>63.9</td>
+                <td>44.8</td>
+                <td>66.0</td>
+                <td>53.2</td>
+                <td>56.5</td>
+                <td>53.6</td>
+                <td>56.2</td>
+                <td>60.2</td>
+                <td>59.1</td>
+                <td>Proprietary long-context</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Idefics2</td>
+                <td>49.4</td>
+                <td>57.4</td>
+                <td>60.4</td>
+                <td>47.3</td>
+                <td>44.7</td>
+                <td>60.9</td>
+                <td>51.4</td>
+                <td>49.4</td>
+                <td>53.7</td>
+                <td>28.9</td>
+                <td>61.0</td>
+                <td>49.8</td>
+                <td>47.0</td>
+                <td>42.0</td>
+                <td>40.7</td>
+                <td>46.2</td>
+                <td>49.7</td>
+                <td>Open-source long-context</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
       </div>
     </div>
   </div>
