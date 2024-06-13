@@ -145,7 +145,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        The LongVideoBench is made up of <em><span style="color: purple;">referred reasoning</span></em> questions, which are dependent on long frame inputs and cannot be well-addressed by a single frame or a few sparse frames. Here's an example:</h2>
+        The LongVideoBench highlights <em><span style="color: purple;">referred reasoning</span></em> questions, which are dependent on long frame inputs and cannot be well-addressed by a single frame or a few sparse frames. Here's an example:</h2>
       <h2><strong>Video:</strong></h2>
       <video poster="" id="bannerVideo" autoplay controls muted loop height="100%">
         <!-- Your video here -->
@@ -195,160 +195,251 @@
 
 
 
-
-
-<section class="section hero is-light">
+<section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-max-desktop">
-        <h2 class="hero title is-3">Leaderboard</h2>
-        <!DOCTYPE html>
+    <div class="hero-body">
+  <h2 class="title is-3 has-text-centered">Leaderboard</h2>
+<table class="table" id="mainTable" data-order='[[ 1, "dsc" ]]'>
+  <thead>
+    <tr>
+      <th scope="col">Model</th>
+      <th scope="col" data-class-name="priority">Test Total (5341)</th>
+      <th scope="col">Test 8s-15s</th>
+      <th scope="col">Test 15s-60s</th>
+      <th scope="col">Test 180s-600s</th>
+      <th scope="col">Test 900s-3600s</th>
+      <th scope="col">Val Total (1337)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href='https://platform.openai.com/docs/models/gpt-4o'>GPT-4o (0513) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">66.7</th>
+      <th scope="col">71.6</th>
+      <th scope="col">76.8</th>
+      <th scope="col">66.7</th>
+      <th scope="col">61.6</th>
+      <th scope="col">66.7</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-1.5-pro-001'>Gemini-1.5-Pro (0514) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">64.4</th>
+      <th scope="col">70.2</th>
+      <th scope="col">75.3</th>
+      <th scope="col">65.0</th>
+      <th scope="col">59.1</th>
+      <th scope="col">64.0</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemini-1.5-flash-001'>Gemini-1.5-Flash (0514) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">62.4</th>
+      <th scope="col">66.1</th>
+      <th scope="col">73.1</th>
+      <th scope="col">63.1</th>
+      <th scope="col">57.3</th>
+      <th scope="col">61.6</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4'>GPT-4-Turbo (0409) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">60.7</th>
+      <th scope="col">66.4</th>
+      <th scope="col">71.1</th>
+      <th scope="col">61.7</th>
+      <th scope="col">54.5</th>
+      <th scope="col">59.1</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/HuggingFaceM4/idefics2-8b'>Idefics2 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">49.4</th>
+      <th scope="col">57.4</th>
+      <th scope="col">60.4</th>
+      <th scope="col">47.3</th>
+      <th scope="col">44.7</th>
+      <th scope="col">49.7</th>
+    </tr>
+      
+      <tr>
+      <th scope="row"><a href='https://huggingface.co/microsoft/Phi-3-vision-128k-instruct'>Phi-3-Vision-Instruct <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">49.9</th>
+      <th scope="col">58.3</th>
+      <th scope="col">59.6</th>
+      <th scope="col">48.4</th>
+      <th scope="col">45.1</th>
+      <th scope="col">49.6</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/TIGER-Lab/Mantis-8B-Idefics2'>Mantis-Idefics2 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">47.6</th>
+      <th scope="col">56.1</th>
+      <th scope="col">61.4</th>
+      <th scope="col">44.6</th>
+      <th scope="col">42.5</th>
+      <th scope="col">47.0</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/TIGER-Lab/Mantis-bakllava-7b'>Mantis-BakLLaVA <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">43.7</th>
+      <th scope="col">51.3</th>
+      <th scope="col">52.7</th>
+      <th scope="col">41.1</th>
+      <th scope="col">40.1</th>
+      <th scope="col">43.7</th>
+      </tr>
+      
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf'>LLaVA-Next-Mistral-7B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">47.1</th>
+      <th scope="col">53.4</th>
+      <th scope="col">57.2</th>
+      <th scope="col">46.9</th>
+      <th scope="col">42.1</th>
+      <th scope="col">49.1</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/salesforce/LAVIS/tree/main/projects/instructblip'>InstructBLIP-T5-XXL <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">43.8</th>
+      <th scope="col">48.1</th>
+      <th scope="col">50.1</th>
+      <th scope="col">44.5</th>
+      <th scope="col">40.0</th>
+      <th scope="col">43.3</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/salesforce/LAVIS/tree/main/projects/blip2'>BLIP-2-T5-XXL <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">43.5</th>
+      <th scope="col">46.7</th>
+      <th scope="col">47.4</th>
+      <th scope="col">44.2</th>
+      <th scope="col">40.9</th>
+      <th scope="col">42.7</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/llava-hf/llava-1.5-13b-hf'>LLaVA-1.5-13B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">43.1</th>
+      <th scope="col">49.0</th>
+      <th scope="col">51.1</th>
+      <th scope="col">41.8</th>
+      <th scope="col">39.6</th>
+      <th scope="col">43.4</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://huggingface.co/llava-hf/llava-1.5-7b-hf'>LLaVA-1.5-7B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">40.4</th>
+      <th scope="col">45.0</th>
+      <th scope="col">47.4</th>
+      <th scope="col">40.1</th>
+      <th scope="col">37.0</th>
+      <th scope="col">40.3</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2'>mPLUG-Owl2 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">39.4</th>
+      <th scope="col">49.4</th>
+      <th scope="col">47.3</th>
+      <th scope="col">38.7</th>
+      <th scope="col">34.3</th>
+      <th scope="col">39.1</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/magic-research/PLLaVA'>PLLaVA-34B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">53.5</th>
+      <th scope="col">60.1</th>
+      <th scope="col">66.8</th>
+      <th scope="col">50.8</th>
+      <th scope="col">49.1</th>
+      <th scope="col">53.2</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/magic-research/PLLaVA'>PLLaVA-13B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">45.1</th>
+      <th scope="col">52.9</th>
+      <th scope="col">54.3</th>
+      <th scope="col">42.9</th>
+      <th scope="col">41.2</th>
+      <th scope="col">45.6</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='#'>LLaVA-Next-Video-M7B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">43.5</th>
+      <th scope="col">50.9</th>
+      <th scope="col">53.1</th>
+      <th scope="col">42.6</th>
+      <th scope="col">38.9</th>
+      <th scope="col">43.5</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/InternLM/InternLM-XComposer/tree/main/projects/ShareGPT4Video'>ShareGPT4Video <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">41.8</th>
+      <th scope="col">46.9</th>
+      <th scope="col">50.1</th>
+      <th scope="col">40.0</th>
+      <th scope="col">38.7</th>
+      <th scope="col">39.7</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/magic-research/PLLaVA'>PLLaVA-7B <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">39.2</th>
+      <th scope="col">45.3</th>
+      <th scope="col">47.3</th>
+      <th scope="col">38.5</th>
+      <th scope="col">35.2</th>
+      <th scope="col">40.2</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2'>VideoChat2 (Mistral-7B) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">41.2</th>
+      <th scope="col">49.3</th>
+      <th scope="col">49.3</th>
+      <th scope="col">39.0</th>
+      <th scope="col">37.5</th>
+      <th scope="col">39.3</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/PKU-YuanGroup/Video-LLaVA/'>VideoLLaVA <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">37.6</th>
+      <th scope="col">43.1</th>
+      <th scope="col">44.6</th>
+      <th scope="col">36.4</th>
+      <th scope="col">34.4</th>
+      <th scope="col">39.1</th>
+    </tr>
+    
+    <tr>
+      <th scope="row"><a href='https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2'>VideoChat2 (Vicuna 7B) <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 4H4v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5M9 15L20 4m-5 0h5v5"/></svg></a></th>
+      <th scope="col">35.1</th>
+      <th scope="col">38.1</th>
+      <th scope="col">40.5</th>
+      <th scope="col">33.5</th>
+      <th scope="col">33.6</th>
+      <th scope="col">36.0</th>
+    </tr>
 
-    <table border="1" class="dataframe">
-        <thead>
-            <tr style="text-align: right;">
-                <th>Model</th>
-                <th>Test Total</th>
-                <th>8s-15s</th>
-                <th>15s-60s</th>
-                <th>180s-600s</th>
-                <th>900s-3600s</th>
-                <th>S2E</th>
-                <th>S2O</th>
-                <th>S2A</th>
-                <th>E2O</th>
-                <th>SSS</th>
-                <th>SOS</th>
-                <th>SAA</th>
-                <th>T3E</th>
-                <th>T3O</th>
-                <th>TOS</th>
-                <th>TAA</th>
-                <th>Val Total</th>
-                <th>LMM Type</th>
-                <th>Interleaved?</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>GPT-4o (0513)</td>
-                <td>66.7</td>
-                <td>71.6</td>
-                <td>76.8</td>
-                <td>66.7</td>
-                <td>61.6</td>
-                <td>76.8</td>
-                <td>69.8</td>
-                <td>70.9</td>
-                <td>67.3</td>
-                <td>44.3</td>
-                <td>75.6</td>
-                <td>62.6</td>
-                <td>64.0</td>
-                <td>66.4</td>
-                <td>62.1</td>
-                <td>66.4</td>
-                <td>66.7</td>
-                <td>Proprietary long-context</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Gemini-1.5-Pro (0514)</td>
-                <td>64.4</td>
-                <td>70.2</td>
-                <td>75.3</td>
-                <td>65.0</td>
-                <td>59.1</td>
-                <td>74.6</td>
-                <td>58.3</td>
-                <td>76.2</td>
-                <td>68.7</td>
-                <td>55.2</td>
-                <td>69.0</td>
-                <td>59.0</td>
-                <td>58.9</td>
-                <td>60.5</td>
-                <td>53.3</td>
-                <td>62.5</td>
-                <td>64.0</td>
-                <td>Proprietary long-context</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Gemini-1.5-Flash (0514)</td>
-                <td>62.4</td>
-                <td>66.1</td>
-                <td>73.1</td>
-                <td>63.1</td>
-                <td>57.3</td>
-                <td>68.5</td>
-                <td>64.7</td>
-                <td>68.0</td>
-                <td>64.5</td>
-                <td>43.1</td>
-                <td>67.3</td>
-                <td>56.2</td>
-                <td>57.5</td>
-                <td>55.0</td>
-                <td>55.3</td>
-                <td>60.7</td>
-                <td>61.6</td>
-                <td>Proprietary long-context</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>GPT-4-Turbo (0409)</td>
-                <td>60.7</td>
-                <td>66.4</td>
-                <td>71.1</td>
-                <td>61.7</td>
-                <td>54.5</td>
-                <td>74.9</td>
-                <td>60.1</td>
-                <td>64.2</td>
-                <td>63.9</td>
-                <td>44.8</td>
-                <td>66.0</td>
-                <td>53.2</td>
-                <td>56.5</td>
-                <td>53.6</td>
-                <td>56.2</td>
-                <td>60.2</td>
-                <td>59.1</td>
-                <td>Proprietary long-context</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Idefics2</td>
-                <td>49.4</td>
-                <td>57.4</td>
-                <td>60.4</td>
-                <td>47.3</td>
-                <td>44.7</td>
-                <td>60.9</td>
-                <td>51.4</td>
-                <td>49.4</td>
-                <td>53.7</td>
-                <td>28.9</td>
-                <td>61.0</td>
-                <td>49.8</td>
-                <td>47.0</td>
-                <td>42.0</td>
-                <td>40.7</td>
-                <td>46.2</td>
-                <td>49.7</td>
-                <td>Open-source long-context</td>
-                <td>Yes</td>
-            </tr>
-        </tbody>
-    </table>
-
-      </div>
-    </div>
+  </tbody>
+</table>
+        
+        
+Please refer to our <a href="https://huggingface.co/spaces/longvideobench/LongVideoBench" target="_blank">Hugging Face leaderboard</a> for more results!      
+  </div>
   </div>
 </section>
-
-
 
 
 
